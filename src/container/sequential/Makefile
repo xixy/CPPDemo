@@ -1,4 +1,6 @@
-all:vector iterator array deque string
+all:vector iterator array deque string initializer_list
+initializer_list:initializer_list.cpp
+	g++ -o initializer_list initializer_list.cpp -std=c++11
 string:string.cpp
 	g++ -o string string.cpp -std=c++11
 deque:deque.cpp
